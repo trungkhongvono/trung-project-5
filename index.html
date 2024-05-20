@@ -94,6 +94,10 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
 
     <body style="background-color: #efefef">
@@ -123,41 +127,44 @@
                 <div class="container">
                     <div class="hero-inner">
                         <div class="hero-left">
-                            <h2 class="hero-left-title">
-                                Digital Smart Wallet
-                            </h2>
-                            <h1 class="hero-left-heading">
-                                Digital
-                                <b class="hero-left-impotant">Payment</b> For
-                                Everyone.
-                            </h1>
-                            <p class="hero-left-desc">
-                                We bring together eveything that’s required to
-                                build websites and apps that accept payments and
-                                send payouts globally. We are the best platform.
-                            </p>
+                            <div class="hero-left-ani">
+                                <h2 class="hero-left-title">
+                                    Digital Smart Wallet
+                                </h2>
+                                <h1 class="hero-left-heading">
+                                    Digital
+                                    <b class="hero-left-impotant">Payment</b>
+                                    For Everyone.
+                                </h1>
+                                <p class="hero-left-desc">
+                                    We bring together eveything that’s required
+                                    to build websites and apps that accept
+                                    payments and send payouts globally. We are
+                                    the best platform.
+                                </p>
 
-                            <form
-                                class="hero-left-input-btn"
-                                id="myForm"
-                                autocomplete="off"
-                                onsubmit="myFunction()"
-                            >
-                                <input
-                                    type="email"
-                                    placeholder="Your email address"
-                                    class="hero-left-input"
-                                    id="myEmail"
-                                    required
-                                />
-                                <button class="hero-left-btn" type="submit">
-                                    Get Started
-                                </button>
-                            </form>
-                            <p class="hero-left-warning">
-                                *We’ll respect the inbox and never share your
-                                email.
-                            </p>
+                                <form
+                                    class="hero-left-input-btn"
+                                    id="myForm"
+                                    autocomplete="off"
+                                    onsubmit="myFunction()"
+                                >
+                                    <input
+                                        type="email"
+                                        placeholder="Your email address"
+                                        class="hero-left-input"
+                                        id="myEmail"
+                                        required
+                                    />
+                                    <button class="hero-left-btn" type="submit">
+                                        Get Started
+                                    </button>
+                                </form>
+                                <p class="hero-left-warning">
+                                    *We’ll respect the inbox and never share
+                                    your email.
+                                </p>
+                            </div>
                         </div>
                         <div class="hero-right">
                             <div class="hero-right-list">
@@ -212,12 +219,12 @@
                     </div>
                 </div>
             </div>
-            <!-- service -->
+            <!--  service -->
             <div class="service">
                 <div class="container">
                     <div class="service-inner">
                         <div class="service-left">
-                            <div class="service-left-position">
+                            <div class="service-left-position wow">
                                 <img
                                     src="./assets/img/service-01 (1).svg"
                                     alt=""
@@ -250,7 +257,7 @@
                             </div>
                         </div>
                         <div class="service-right">
-                            <div class="service-right-animator">
+                            <div class="service-right-animator wow">
                                 <div class="service-right-title">
                                     Digital Smart Wallet
                                 </div>
@@ -259,17 +266,19 @@
                                 </h1>
                             </div>
                             <div class="service-right-list">
-                                <div class="service-right-item-01">
+                                <div class="service-right-item-01 wow">
                                     <div class="service-right-document">
                                         1. Open a High Interest Checking account
                                     </div>
-                                    <div class="service-right-desc">
+                                    <div
+                                        class="service-right-desc animate__animated"
+                                    >
                                         Fund your bank account with a minimum
                                         balance of $100. Enroll in 3 minutes or
                                         less!
                                     </div>
                                 </div>
-                                <div class="service-right-item-02">
+                                <div class="service-right-item-02 wow">
                                     <div class="service-right-document">
                                         2. 10 point-of-sale transactions each
                                         Month that are at least $10 each.
@@ -280,7 +289,7 @@
                                         accue APYI
                                     </div>
                                 </div>
-                                <div class="service-right-item-03">
+                                <div class="service-right-item-03 wow">
                                     <div class="service-right-document">
                                         3. Receive up to 5.50% APY
                                     </div>
@@ -296,6 +305,17 @@
                 </div>
             </div>
         </main>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init({
+                animateClass: "animate__animated",
+            });
+        </script>
     </body>
 </html>
 

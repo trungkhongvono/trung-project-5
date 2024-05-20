@@ -7,7 +7,7 @@ html {
 }
 .body {
     font-size: 1.6rem;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: "Open Sans", sans-serif;
 }
 .container {
@@ -30,7 +30,7 @@ html {
 .nav {
     display: flex;
     gap: 48px;
-    margin-left: 70px;
+    margin-left: 81px;
     cursor: pointer;
     margin-right: 454px;
 }
@@ -120,6 +120,7 @@ html {
         opacity: 1;
     }
 }
+
 @keyframes right {
     0% {
         transform: translateX(2000px) scale(0.7);
@@ -134,6 +135,7 @@ html {
         opacity: 1;
     }
 }
+
 .hero-left-title {
     animation: left 1s;
     color: #696d77;
@@ -202,7 +204,7 @@ html {
     justify-content: space-between;
     width: 540px;
     height: 74px;
-    /* padding: 23px 0 23px 23px; */
+    padding: 23px 0 23px 23px;
     border-radius: 8px;
     background: #fff;
 
@@ -245,7 +247,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8px;
+
     cursor: pointer;
 }
 @keyframes hero-left-warning {
@@ -265,14 +267,22 @@ html {
 
     font-family: "Open Sans";
     font-size: 1.4rem;
-
+    overflow: hidden;
     font-weight: 600;
     line-height: 1.72; /* 171.429% */
 }
 .hero-left {
     margin-top: 145px;
     animation: fake-left 1s 1;
+    width: 540px;
 }
+.hero-right {
+    margin-left: 170px;
+    width: 570px;
+
+    margin-top: 88px;
+}
+
 @keyframes fake-left {
     from {
         transform: translateX(-100px);
@@ -282,11 +292,6 @@ html {
     }
 }
 
-.hero-right {
-    margin-left: 160px;
-
-    margin-top: 88px;
-}
 .hero-right-list {
     position: relative;
     animation: right 1s;
@@ -340,7 +345,7 @@ html {
     animation-fill-mode: forwards;
     animation-delay: 2s;
     opacity: 0;
-    right: -174px;
+    right: -12px;
 
     justify-content: center;
     align-items: center;
@@ -521,7 +526,7 @@ html {
     width: 131px;
 }
 .service-right {
-    margin-left: 130px;
+    margin-left: 210px;
     padding: 29px;
 
     width: 470px;
@@ -556,9 +561,9 @@ html {
     animation: right 1s;
     animation-delay: 1s;
     opacity: 0;
-
     animation-fill-mode: forwards;
 }
+
 .service-right-title {
     color: #696d77;
     position: relative;
