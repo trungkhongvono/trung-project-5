@@ -98,6 +98,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
 
     <body style="background-color: #efefef">
@@ -122,49 +126,46 @@
                 </div>
             </div>
         </header>
-        <main style="height: 2000px">
+        <main style="height: 20000px">
             <div class="hero">
                 <div class="container">
                     <div class="hero-inner">
                         <div class="hero-left">
-                            <div class="hero-left-ani">
-                                <h2 class="hero-left-title">
-                                    Digital Smart Wallet
-                                </h2>
-                                <h1 class="hero-left-heading">
-                                    Digital
-                                    <b class="hero-left-impotant">Payment</b>
-                                    For Everyone.
-                                </h1>
-                                <p class="hero-left-desc">
-                                    We bring together eveything that’s required
-                                    to build websites and apps that accept
-                                    payments and send payouts globally. We are
-                                    the best platform.
-                                </p>
+                            <h2 class="hero-left-title">
+                                Digital Smart Wallet
+                            </h2>
+                            <h1 class="hero-left-heading">
+                                Digital
+                                <b class="hero-left-impotant">Payment</b>
+                                For Everyone.
+                            </h1>
+                            <p class="hero-left-desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
 
-                                <form
-                                    class="hero-left-input-btn"
-                                    id="myForm"
-                                    autocomplete="off"
-                                    onsubmit="myFunction()"
-                                >
-                                    <input
-                                        type="email"
-                                        placeholder="Your email address"
-                                        class="hero-left-input"
-                                        id="myEmail"
-                                        required
-                                    />
-                                    <button class="hero-left-btn" type="submit">
-                                        Get Started
-                                    </button>
-                                </form>
-                                <p class="hero-left-warning">
-                                    *We’ll respect the inbox and never share
-                                    your email.
-                                </p>
-                            </div>
+                            <form
+                                class="hero-left-input-btn"
+                                id="myForm"
+                                autocomplete="off"
+                                onsubmit="myFunction()"
+                            >
+                                <input
+                                    type="email"
+                                    placeholder="Your email address"
+                                    class="hero-left-input"
+                                    id="myEmail"
+                                    required
+                                />
+                                <button class="hero-left-btn" type="submit">
+                                    Get Started
+                                </button>
+                            </form>
+                            <p class="hero-left-warning">
+                                *We’ll respect the inbox and never share your
+                                email.
+                            </p>
                         </div>
                         <div class="hero-right">
                             <div class="hero-right-list">
@@ -224,7 +225,10 @@
                 <div class="container">
                     <div class="service-inner">
                         <div class="service-left">
-                            <div class="service-left-position wow">
+                            <div
+                                class="service-left-position wow"
+                                data-aos-once="false"
+                            >
                                 <img
                                     src="./assets/img/service-01 (1).svg"
                                     alt=""
@@ -304,6 +308,41 @@
                     </div>
                 </div>
             </div>
+            <!-- feature  -->
+            <div class="feature">
+                <div class="container">
+                    <div class="feature-inner">
+                        <div class="feature-left">
+                            <h2 class="feature-left-title">
+                                Digital Smart Wallet
+                            </h2>
+                            <h1 class="feature-left-heading">
+                                One Card For All Your Payments
+                            </h1>
+                            <p class="feature-left-desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <div class="feature-left-list">
+                                <div class="feature-left-item">
+                                    Global Payments
+                                </div>
+                                <div class="feature-left-item">
+                                    One-Click Purchase
+                                </div>
+                                <div class="feature-left-item">
+                                    Friendly Price
+                                </div>
+                            </div>
+                            <button class="feature-left-btn">
+                                Get Started
+                            </button>
+                        </div>
+                        <div class="feature-right"></div>
+                    </div>
+                </div>
+            </div>
         </main>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
@@ -315,6 +354,10 @@
             new WOW().init({
                 animateClass: "animate__animated",
             });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
     </body>
 </html>
